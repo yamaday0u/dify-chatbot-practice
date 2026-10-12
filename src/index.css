@@ -1,3 +1,5 @@
+@import 'tailwindcss';
+
 :root {
   font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
@@ -9,25 +11,15 @@
   --dify-chatbot-bubble-button-right: 1rem;
 }
 
-body {
-  margin: 0;
-}
-
-.container {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-.warning {
-  padding: 0.75rem 1rem;
-  border: 1px solid #f59e0b;
-  border-radius: 8px;
-  background: rgba(245, 158, 11, 0.1);
-}
-
-/* チャットウィンドウのサイズ調整 */
-#dify-chatbot-bubble-window {
+/* embed.min.js が生成する要素には className を付けられないため、ID セレクタで指定する */
+/* チャットウィンドウのサイズ・枠線の調整 */
+/* 中身は iframe（udify.app）で背景は見えないため、枠線でボタンと同じ色にする */
+/* #dify-chatbot-bubble-window {
   width: 24rem !important;
   height: 40rem !important;
+  border: 3px solid #008b8b !important; /* BubblePage の containerProps のボタン色と合わせる */
+/* }  */
+
+#dify-chatbot-bubble-button {
+  --dify-chatbot-bubble-button-bg-color: #008b8b;
 }
