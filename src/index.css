@@ -1,0 +1,33 @@
+:root {
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color-scheme: light dark;
+
+  /* チャットバブルボタンのカスタマイズ（デフォルト値はドキュメント参照） */
+  --dify-chatbot-bubble-button-bg-color: #155eef;
+  --dify-chatbot-bubble-button-bottom: 1rem;
+  --dify-chatbot-bubble-button-right: 1rem;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.warning {
+  padding: 0.75rem 1rem;
+  border: 1px solid #f59e0b;
+  border-radius: 8px;
+  background: rgba(245, 158, 11, 0.1);
+}
+
+/* チャットウィンドウのサイズ調整 */
+#dify-chatbot-bubble-window {
+  width: 24rem !important;
+  height: 40rem !important;
+}
